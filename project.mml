@@ -1903,9 +1903,9 @@ Layer:
                 osm_id,
                 way,
                 highway,
-                array_length(refs,1) AS height,
-                (SELECT MAX(char_length(ref)) FROM unnest(refs) AS u(ref)) AS width,
-                array_to_string(refs, E'\n') AS refs
+                array_length(refs[1:1],1) AS height,
+                (SELECT MAX(char_length(ref)) FROM unnest(refs[1:1]) AS u(ref)) AS width,
+                array_to_string(refs[1:1], E'\n') AS refs
               FROM (
                 SELECT
                     osm_id,
