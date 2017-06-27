@@ -161,7 +161,7 @@ Layer:
               OR aeroway IN ('apron', 'aerodrome')
               OR amenity IN ('parking', 'bicycle_parking', 'motorcycle_parking', 'university', 'college', 'school', 'hospital', 'kindergarten', 
                              'grave_yard', 'place_of_worship', 'prison', 'clinic')
-              OR military IN ('danger_area')
+              -- OR military IN ('danger_area')
               OR "natural" IN ('beach', 'shoal', 'heath', 'mud', 'marsh', 'wetland', 'grassland', 'wood', 'sand', 'scree', 'shingle', 'bare_rock', 'scrub')
               OR power IN ('station', 'sub_station', 'substation', 'generator')
               OR tourism IN ('attraction', 'camp_site', 'caravan_site', 'picnic_site')
@@ -596,23 +596,23 @@ Layer:
     properties:
       group-by: layernotnull
       minzoom: 10
-  - id: landuse-overlay
-    name: landuse-overlay
-    geometry: polygon
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way,
-            landuse,
-            way_area/NULLIF(!pixel_width!::real*!pixel_height!::real,0) AS way_pixels
-          FROM planet_osm_polygon
-          WHERE landuse = 'military'
-            AND building IS NULL
-        ) AS landuse_overlay
-    properties:
-      minzoom: 7
+#  - id: landuse-overlay
+#    name: landuse-overlay
+#    geometry: polygon
+#    <<: *extents
+#    Datasource:
+#      <<: *osm2pgsql
+#      table: |-
+#        (SELECT
+#            way,
+#            landuse,
+#            way_area/NULLIF(!pixel_width!::real*!pixel_height!::real,0) AS way_pixels
+#          FROM planet_osm_polygon
+#          WHERE landuse = 'military'
+#            AND building IS NULL
+#        ) AS landuse_overlay
+#    properties:
+#      minzoom: 7
   - id: line-barriers
     name: line-barriers
     class: barriers
