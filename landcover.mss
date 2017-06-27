@@ -1,33 +1,33 @@
 // --- Parks, woods, other green things ---
 
-@grass: #cdebb0; // also meadow, common, garden, village_green
-@scrub: #b5e3b5;
-@forest: #add19e;       // Lch(80,30,135)
+@grass: #e6f2c1; // also meadow, common, garden, village_green
+@scrub: #e6f2c1;
+@forest: #C3D9AD;       // Lch(80,30,135)
 @forest-text: #46673b;  // Lch(40,30,135)
-@park: #c8facc;         // Lch(94,30,145) also recreation_ground
+@park: #b8e6b8;         // Lch(94,30,145) also recreation_ground
 @orchard: #aedfa3; // also vineyard, plant_nursery
 
 // --- "Base" landuses ---
 
-@residential: #e0dfdf;      // Lch(89,0,0)
-@residential-line: #b9b9b9; // Lch(75,0,0)
-@retail: #ffd6d1;           // Lch(89,16,30)
-@retail-line: #d99c95;      // Lch(70,25,30)
-@commercial: #f2dad9;       // Lch(89,8.5,25)
-@commercial-line: #d1b2b0;  // Lch(75,12,25)
-@industrial: #ebdbe8;       // Lch(89,9,330) (Also used for railway)
-@industrial-line: #c6b3c3;  // Lch(75,11,330) (Also used for railway-line)
-@farmland: #fbecd7;         // Lch(94,12,80)
-@farmland-line: #d6c4ab;    // Lch(80,15,80)
-@farmyard: #f5dcba;         // Lch(89,20,80)
-@farmyard-line: #d1b48c;    // Lch(75,25,80)
+@residential: darken(@land-color, 2%);
+@residential-line: @residential; // Lch(75,0,0)
+@retail: darken(@land-color, 3%);           // Lch(89,16,30)
+@retail-line: @retail;      // Lch(70,25,30)
+@commercial: @retail;       // Lch(89,8.5,25)
+@commercial-line: @commercial;  // Lch(75,12,25)
+@industrial: darken(@land-color, 4%);       // Lch(89,9,330) (Also used for railway)
+@industrial-line: @industrial;  // Lch(75,11,330) (Also used for railway-line)
+@farmland: #f2e8b6;         // Lch(94,12,80)
+@farmland-line: @farmland;    // Lch(80,15,80)
+@farmyard: lighten(@farmland, 10%);         // Lch(89,20,80)
+@farmyard-line: @farmyard;    // Lch(75,25,80)
 
 // --- Transport ----
 
 @aerodrome: #e9e7e2;
 @apron: #e9d1ff;
 @garages: #dfddce;
-@parking: #f7efb7;
+@parking: #eee;
 @railway: @industrial;
 @railway-line: @industrial-line;
 @rest_area: #efc8c8; // also services

@@ -4,23 +4,29 @@
 /*                                                                   */
 /*   ./scripts/generate_road_colours.py > road-colors-generated.mss  */
 /*                                                                   */
-@motorway-low-zoom-casing: #c24e6b;
-@trunk-low-zoom-casing: #cf6649;
-@primary-low-zoom-casing: #c38a27;
-@secondary-low-zoom-casing: #9eae23;
-@motorway-casing: #dc2a67;
-@trunk-casing: #c84e2f;
-@primary-casing: #a06b00;
-@secondary-casing: #707d05;
-@motorway-shield: #620728;
-@trunk-shield: #5d1b0b;
-@primary-shield: #4c2e00;
-@secondary-shield: #323b00;
-@motorway-low-zoom: #e66e89;
-@trunk-low-zoom: #f5977a;
-@primary-low-zoom: #f3c380;
-@secondary-low-zoom: #e8eda0;
-@motorway-fill: #e892a2;
-@trunk-fill: #f9b29c;
-@primary-fill: #fcd6a4;
-@secondary-fill: #f7fabf;
+
+@motorway-fill: #ffcb82;
+@trunk-fill: @motorway-fill;
+@primary-fill: #ffeaa3;
+@secondary-fill: #ffffff;
+
+@motorway-low-zoom: @motorway-fill;
+@trunk-low-zoom: @trunk-fill;
+@primary-low-zoom: @primary-fill;
+@secondary-low-zoom: @secondary-fill;
+
+// This is just the shield text color.
+@motorway-shield: #707070;
+@trunk-shield: #707070;
+@primary-shield: #707070;
+@secondary-shield: #707070;
+
+@motorway-casing: #b9996a;
+@trunk-casing: @motorway-casing;
+@primary-casing: #bcaf80;
+@secondary-casing: #fafafa;
+
+@motorway-low-zoom-casing: @motorway-low-zoom;
+@trunk-low-zoom-casing: @trunk-low-zoom;
+@primary-low-zoom-casing: @primary-low-zoom;
+@secondary-low-zoom-casing: @secondary-low-zoom;
