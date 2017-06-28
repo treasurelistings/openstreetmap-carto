@@ -24,7 +24,7 @@
 @motorway-casing: #c6c58f;
 @trunk-casing: #c6c58f;
 @primary-casing: #bcaf80;
-@secondary-casing: #fafafa;
+@secondary-casing: #e0e0e0;
 
 @motorway-low-zoom-casing: @motorway-low-zoom;
 @trunk-low-zoom-casing: @trunk-low-zoom;
