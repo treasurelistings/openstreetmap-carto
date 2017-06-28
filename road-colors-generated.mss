@@ -5,15 +5,15 @@
 /*   ./scripts/generate_road_colours.py > road-colors-generated.mss  */
 /*                                                                   */
 
-@motorway-fill: #ecc38c;
-@trunk-fill: #ffcb82;
-@primary-fill: #f5eeb8;
-@secondary-fill: #ffffff;
+@motorway-fill: #ffcb82;
+@trunk-fill: @primary-fill;
+@primary-fill: #ffe898;
+@secondary-fill: lighten(@primary-fill, 10%);
 
-@motorway-low-zoom: @motorway-fill;
-@trunk-low-zoom: @trunk-fill;
-@primary-low-zoom: #e1dab4;
-@secondary-low-zoom: @secondary-fill;
+@motorway-low-zoom: darken(@motorway-fill, 10%);
+@trunk-low-zoom: darken(@trunk-fill, 10%);
+@primary-low-zoom: darken(@primary-fill, 15%);
+@secondary-low-zoom: darken(@secondary-fill, 15%);
 
 // This is just the shield text color.
 @motorway-shield: #707070;
@@ -21,10 +21,10 @@
 @primary-shield: #707070;
 @secondary-shield: #707070;
 
-@motorway-casing: #c6c58f;
-@trunk-casing: #c6c58f;
-@primary-casing: #bcaf80;
-@secondary-casing: #e0e0e0;
+@motorway-casing: darken(@motorway-fill, 20%);
+@trunk-casing: darken(@trunk-fill, 20%);
+@primary-casing: darken(@primary-fill, 20%);
+@secondary-casing: darken(@secondary-fill, 20%);
 
 @motorway-low-zoom-casing: @motorway-low-zoom;
 @trunk-low-zoom-casing: @trunk-low-zoom;

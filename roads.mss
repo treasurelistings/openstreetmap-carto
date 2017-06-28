@@ -25,12 +25,12 @@
 @access-marking-living-street: #cccccc;
 
 @default-casing: white;
-@tertiary-casing: #8f8f8f;
-@residential-casing: #bbb;
+@tertiary-casing: #ddd;
+@residential-casing: @tertiary-casing;
 @road-casing: @residential-casing;
 @service-casing: @residential-casing;
 @living-street-casing: @residential-casing;
-@pedestrian-casing: #999;
+@pedestrian-casing: @tertiary-casing;
 @path-casing: @default-casing;
 @footway-casing: @default-casing;
 @steps-casing: @default-casing;
@@ -49,8 +49,8 @@
 @private-marking: #efa9a9;
 @private-marking-for-red: #C26363;
 
-@tunnel-casing: grey;
-@bridge-casing: #707070;
+@tunnel-casing: @tertiary-casing;
+@bridge-casing: @tertiary-casing;
 
 @motorway-tunnel-fill: lighten(@motorway-fill, 10%);
 @trunk-tunnel-fill: lighten(@trunk-fill, 10%);
@@ -2777,9 +2777,9 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-face-name: @book-fonts;
       [tunnel = 'no'] {
         text-halo-radius: @standard-halo-radius;
-        [highway = 'motorway'] { text-halo-fill: @motorway-fill; }
-        [highway = 'trunk'] { text-halo-fill: @trunk-fill; }
-        [highway = 'primary'] { text-halo-fill: @primary-fill; }
+        [highway = 'motorway'] { text-halo-fill: @standard-halo-fill; }
+        [highway = 'trunk'] { text-halo-fill: @standard-halo-fill; }
+        [highway = 'primary'] { text-halo-fill: @standard-halo-fill; }
       }
     }
     [zoom >= 14] {
@@ -2806,7 +2806,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-placement: line;
       text-face-name: @book-fonts;
       text-halo-radius: @standard-halo-radius;
-      text-halo-fill: @secondary-fill;
+      text-halo-fill: @standard-halo-fill;
     }
     [zoom >= 14] {
       text-size: 13;
