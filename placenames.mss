@@ -1,5 +1,5 @@
-@placenames: #222;
-@placenames-light: #777777;
+@placenames: #8d4214;
+@placenames-light: @placenames;
 @country-labels: darken(@admin-boundaries, 15%);
 @state-labels: desaturate(darken(@admin-boundaries, 5%), 20%);
 
@@ -34,7 +34,7 @@
       text-line-spacing: -0.7; // -0.05 em
     }
     text-fill: @country-labels;
-    text-face-name: @book-fonts;
+    text-face-name: @bold-fonts;
     text-halo-fill: @standard-halo-fill;
     text-halo-radius: @standard-halo-radius * 1.5;
     text-placement: interior;
@@ -70,7 +70,7 @@
     shield-text-dx: 6;
     shield-text-dy: 6;
     shield-name: '[name]';
-    shield-face-name: @book-fonts;
+    shield-face-name: @bold-fonts;
     shield-fill: @placenames;
     shield-size: 11;
     shield-wrap-width: 30; // 2.7 em
@@ -103,7 +103,7 @@
   }
   [zoom >= 8] {
     text-name: '[name]';
-    text-face-name: @book-fonts;
+    text-face-name: @bold-fonts;
     text-fill: @placenames;
     text-size: 13;
     text-wrap-width: 65; // 5.0 em
@@ -135,7 +135,7 @@
       shield-text-dx: 4;
       shield-text-dy: 4;
       shield-name: '[name]';
-      shield-face-name: @book-fonts;
+      shield-face-name: @bold-fonts;
       shield-fill: @placenames;
       shield-size: 11;
       shield-wrap-width: 30; // 2.7 em
@@ -170,7 +170,7 @@
     }
     [zoom >= 8][score >= 400000] {
       text-name: '[name]';
-      text-face-name: @book-fonts;
+      text-face-name: @bold-fonts;
       text-fill: @placenames;
       text-size: 13;
       text-wrap-width: 65; // 5.0 em
@@ -205,7 +205,7 @@
       shield-name: "[name]";
       shield-size: 10;
       shield-fill: @placenames;
-      shield-face-name: @book-fonts;
+      shield-face-name: @bold-fonts;
       shield-halo-fill: @standard-halo-fill;
       shield-halo-radius: @standard-halo-radius * 1.5;
       shield-wrap-width: 30; // 3.0 em
@@ -225,7 +225,7 @@
       text-name: "[name]";
       text-size: 10;
       text-fill: @placenames;
-      text-face-name: @book-fonts;
+      text-face-name: @bold-fonts;
       text-halo-fill: @standard-halo-fill;
       text-halo-radius: @standard-halo-radius * 1.5;
       text-wrap-width: 40; // 4.0 em
@@ -265,7 +265,7 @@
       text-name: "[name]";
       text-size: 10;
       text-fill: @placenames;
-      text-face-name: @book-fonts;
+      text-face-name: @bold-fonts;
       text-halo-fill: @standard-halo-fill;
       text-halo-radius: @standard-halo-radius * 1.5;
       text-wrap-width: 45; // 4.5 em
@@ -298,7 +298,7 @@
     text-name: "[name]";
     text-size: 11;
     text-fill: @placenames;
-    text-face-name: @book-fonts;
+    text-face-name: @bold-fonts;
     text-halo-fill: @standard-halo-fill;
     text-halo-radius: @standard-halo-radius * 1.5;
     text-wrap-width: 55; // 5.0 em
@@ -333,7 +333,7 @@
       text-name: "[name]";
       text-size: 10;
       text-fill: @placenames;
-      text-face-name: @book-fonts;
+      text-face-name: @bold-fonts;
       text-halo-fill: @standard-halo-fill;
       text-halo-radius: @standard-halo-radius * 1.5;
       text-wrap-width: 50; // 5.0 em
@@ -379,7 +379,7 @@
       text-name: "[name]";
       text-size: 10;
       text-fill: @placenames;
-      text-face-name: @book-fonts;
+      text-face-name: @bold-fonts;
       text-halo-fill: @standard-halo-fill;
       text-halo-radius: @standard-halo-radius * 1.5;
       text-wrap-width: 45; // 4.5 em

@@ -6,7 +6,7 @@
 /*                                                                   */
 
 @motorway-fill: #ffcb82;
-@trunk-fill: @primary-fill;
+@trunk-fill: @motorway-fill;
 @primary-fill: #ffe898;
 @secondary-fill: lighten(@primary-fill, 10%);
 
@@ -16,10 +16,10 @@
 @secondary-low-zoom: darken(@secondary-fill, 15%);
 
 // This is just the shield text color.
-@motorway-shield: #707070;
-@trunk-shield: #707070;
-@primary-shield: #707070;
-@secondary-shield: #707070;
+@motorway-shield: #8b5a0a;
+@trunk-shield: @motorway-shield;
+@primary-shield: @motorway-shield;
+@secondary-shield: @motorway-shield;
 
 @motorway-casing: darken(@motorway-fill, 20%);
 @trunk-casing: darken(@trunk-fill, 20%);

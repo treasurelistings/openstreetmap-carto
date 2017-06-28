@@ -277,7 +277,7 @@
 @shield-line-spacing-z18: -1.80; // -0.15 em
 @shield-spacing: 760;
 @shield-min-distance: 40;
-@shield-font: @book-fonts;
+@shield-font: @bold-fonts;
 @shield-clip: false;
 
 .roads-casing, .bridges-casing, .tunnels-casing {
@@ -2763,14 +2763,12 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
 #roads-text-name {
   [highway = 'motorway'],
   [highway = 'trunk'],
-  [highway = 'primary'],
   [highway = 'construction'][construction = 'motorway'],
-  [highway = 'construction'][construction = 'trunk'],
-  [highway = 'construction'][construction = 'primary'] {
+  [highway = 'construction'][construction = 'trunk'] {
     [zoom >= 13] {
       text-name: "[name]";
       text-size: 12;
-      text-fill: #666666;
+      text-fill: #8c2a00;
       text-spacing: 300;
       text-clip: false;
       text-placement: line;
@@ -2795,12 +2793,14 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-size: 16;
     }
   }
+  [highway = 'primary'],
   [highway = 'secondary'],
+  [highway = 'construction'][construction = 'primary'],
   [highway = 'construction'][construction = 'secondary'] {
     [zoom >= 13] {
       text-name: "[name]";
       text-size: 12;
-      text-fill: #666666;
+      text-fill: #9d634a;
       text-spacing: 300;
       text-clip: false;
       text-placement: line;
