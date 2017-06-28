@@ -1852,24 +1852,24 @@ Layer:
     properties:
       minzoom: 10
       maxzoom: 12
-  - id: junctions
-    name: junctions
-    geometry: point
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way,
-            highway,
-            junction,
-            ref,
-            name
-          FROM planet_osm_point
-          WHERE highway = 'motorway_junction' OR highway = 'traffic_signals' OR junction = 'yes'
-        ) AS junctions
-    properties:
-      minzoom: 11
+#  - id: junctions
+#    name: junctions
+#    geometry: point
+#    <<: *extents
+#    Datasource:
+#      <<: *osm2pgsql
+#      table: |-
+#        (SELECT
+#            way,
+#            highway,
+#            junction,
+#            ref,
+#            name
+#          FROM planet_osm_point
+#          WHERE highway = 'motorway_junction' OR highway = 'traffic_signals' OR junction = 'yes'
+#        ) AS junctions
+#    properties:
+#      minzoom: 11
   - id: bridge-text
     name: bridge-text
     geometry: polygon
