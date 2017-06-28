@@ -17,10 +17,10 @@
 @commercial-line: @commercial;  // Lch(75,12,25)
 @industrial: darken(@land-color, 4%);       // Lch(89,9,330) (Also used for railway)
 @industrial-line: @industrial;  // Lch(75,11,330) (Also used for railway-line)
-@farmland: #f2e8b6;         // Lch(94,12,80)
-@farmland-line: @farmland;    // Lch(80,15,80)
-@farmyard: lighten(@farmland, 10%);         // Lch(89,20,80)
-@farmyard-line: @farmyard;    // Lch(75,25,80)
+@farmland: @land-color;         // Lch(94,12,80)
+@farmland-line: @land-color;    // Lch(80,15,80)
+@farmyard: @land-color;         // Lch(89,20,80)
+@farmyard-line: @land-color;    // Lch(75,25,80)
 
 // --- Transport ----
 

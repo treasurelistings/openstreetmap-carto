@@ -3,7 +3,7 @@ Map {
 }
 
 @water-color: #c4dff6;
-@land-color: #ebeeee;
+@land-color: #f2efe8;
 
 @standard-halo-radius: 1;
 @standard-halo-fill: rgba(255,255,255,0.6);
