@@ -1676,7 +1676,8 @@ Layer:
             OR man_made IN ('mast', 'water_tower', 'lighthouse', 'windmill', 'obelisk')
             OR "natural" IN ('spring')
             OR historic IN ('memorial', 'monument', 'archaeological_site')
-            OR highway IN ('bus_stop', 'elevator', 'traffic_signals')
+            -- OR highway IN ('bus_stop', 'elevator', 'traffic_signals')
+            OR highway IN ('bus_stop', 'elevator')
             OR (power = 'generator' AND (tags @> '"generator:source"=>wind' OR tags @> 'power_source=>wind'))
           ORDER BY way_area desc
         ) AS amenity_points_poly
@@ -1763,7 +1764,8 @@ Layer:
             -- OR "natural" IN ('peak', 'volcano', 'saddle', 'spring', 'cave_entrance')
             -- OR historic IN ('memorial', 'monument', 'archaeological_site', 'wayside_cross')
             OR historic IN ('memorial', 'monument', 'archaeological_site')
-            OR highway IN ('bus_stop', 'elevator', 'traffic_signals', 'ford')
+            -- OR highway IN ('bus_stop', 'elevator', 'traffic_signals', 'ford')
+            OR highway IN ('bus_stop', 'elevator', 'ford')
             OR (power = 'generator' AND (tags @> '"generator:source"=>wind' OR tags @> 'power_source=>wind'))
           ORDER BY score DESC NULLS LAST
           ) AS amenity_points
